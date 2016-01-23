@@ -13,6 +13,11 @@ To have fully operational piece you will need just:
 * updload the firmware to your arduino.
 * have fun
 
+## Plans
+Right now i'm working on arduino network. Where For each Railway block (logical unit) will corresponds one Arduino DUO, with connections to Slave Aruino network Using I2C protocol.
+So in fact, that one controller will be responsible for all the things happening inside the block.
+Using I2C protocol we could connect 127 devices to One Arduino Duo. And for main controller, to communicate between signal nodes, will have to send only 4 bits of data.
+
 ## Signals and codes
 ![Red signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/red.png) - **Code: 0**
 
