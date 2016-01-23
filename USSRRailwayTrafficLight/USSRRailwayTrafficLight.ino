@@ -56,15 +56,14 @@ void setup() {
 
 void loop() {
   unsigned long currentMillis = millis();
-  
+
   currentSignal = ceil((millis() - millisFromStart) / signalInterval);
   if (currentSignal > signalCount) {
     millisFromStart = millis();
-  }  
-  
+  }
+
   updateBlinkingState(currentMillis);
     
-  // set the LED with the ledState of the variable:
   displaySignal(currentSignal, blinkingLedState);
 }
 
@@ -98,7 +97,7 @@ void displaySignal(int code, int blinkingLedState) {
     previousSignal = code;
     turnOffSignals();
   }
-  
+
   switch(code){
     case 0:
       digitalWrite(red, HIGH);
@@ -162,4 +161,3 @@ void displaySignal(int code, int blinkingLedState) {
     break;
   }
 }
-
