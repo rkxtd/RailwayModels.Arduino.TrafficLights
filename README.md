@@ -28,4 +28,18 @@ To have fully operational piece you will need just:
 
 ![Blinking Yellow signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/yellow_blinking.gif) - **Code: 6**
 
-![Yellow/Blinking Yellow/Green bar signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/both_yellow_blinking_green_bar.gif) - **Code: 7**
+![Yellow/Yellow/Green bar signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/both_yellow_green_bar.gif) - **Code: 7**
+
+![Yellow/Blinking Yellow/Green bar signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/both_yellow_blinking_green_bar.gif) - **Code: 8**
+
+![Blinking Green/Yellow/Green bar signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/green_blinking_yellow_green_bar.gif) - **Code: 9**
+
+![Blinking Green](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/green_blinking.png) - **Code: 10**
+
+![Yellow/White](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/yellow_white.gif) - **Code: 11**
+
+![Green/White](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/green_white.gif) - **Code: 12**
+
+![Yellow Blinking/White](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/yellow_blinking_white.gif) - **Code: 13**
+
+![Blue](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/blue.png) - **Code: 14**
