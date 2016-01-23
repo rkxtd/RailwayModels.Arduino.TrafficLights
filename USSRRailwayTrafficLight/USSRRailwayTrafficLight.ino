@@ -1,4 +1,4 @@
-/* The list of signals icould be found here
+/* The list of signals could be found here
  *  https://ru.wikipedia.org/wiki/%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D0%B0%D1%8F_%D1%81%D0%B2%D0%B5%D1%82%D0%BE%D1%84%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F
  * /-\
  * |O| - yellowTop
@@ -15,11 +15,13 @@
  *  |
  * /-\
  * |O| - white
+ * |O| - blue
  * \_/
  *  |
  *  |
  */
 
+// Signal Pins
 const int yellowTop =  12;
 const int green =  11;
 const int yellowMiddle =  10;
@@ -28,20 +30,17 @@ const int yellowBottom =  8;
 const int greenBar =  7;
 const int white =  6;
 const int blue =  5;
-const int switchPin = 3;
-const int buttonPin = 2;
 
-int blinkingLedState = LOW;
-unsigned long previousMillis = 0;
-unsigned long millisFromStart = 0;
-const long interval = 1000;
-const long signalInterval = 5000;
-const int signalCount = 14;
-int currentSignal = 0;
-int previousSignal = -1;
-int buttonState = 0;  
-int previousButtonState = 0;
-int switchState = 0;  
+// configuration
+int blinkingLedState = HIGH; // what state should be initial for blinking diode
+const long interval = 700; // blinking pause
+
+unsigned long previousMillis = 0; // var for auto run
+unsigned long millisFromStart = 0;  // var for auto run
+const long signalInterval = 5000; // var for auto run
+const int signalCount = 14; // var for auto run. how many signal variations we have
+int currentSignal = 0; // var for auto run.
+int previousSignal = -1; // var for auto run
 
 void setup() {
   // set the digital pin as output:
@@ -53,30 +52,17 @@ void setup() {
   pinMode(greenBar, OUTPUT);
   pinMode(white, OUTPUT);
   pinMode(blue, OUTPUT);
-  pinMode(buttonPin, INPUT);
-  pinMode(switchPin, INPUT);
-  Serial.begin(9600);
 }
 
 void loop() {
   unsigned long currentMillis = millis();
- 
+  
   currentSignal = ceil((millis() - millisFromStart) / signalInterval);
   if (currentSignal > signalCount) {
     millisFromStart = millis();
   }  
   
-  if (currentMillis - previousMillis >= interval) {
-    // save the last time you blinked the LED
-    previousMillis = currentMillis;
-
-    // if the LED is off turn it on and vice-versa:
-    if (blinkingLedState == LOW) {
-      blinkingLedState = HIGH;
-    } else {
-      blinkingLedState = LOW;
-    }
-  }    
+  updateBlinkingState(currentMillis);
     
   // set the LED with the ledState of the variable:
   displaySignal(currentSignal, blinkingLedState);
@@ -91,6 +77,20 @@ void turnOffSignals() {
   digitalWrite(greenBar, LOW);
   digitalWrite(white, LOW);
   digitalWrite(blue, LOW);
+}
+
+void updateBlinkingState(int currMillis) {
+  if (currMillis - previousMillis >= interval) {
+    // save the last time you blinked the LED
+    previousMillis = currMillis;
+
+    // if the LED is off turn it on and vice-versa:
+    if (blinkingLedState == LOW) {
+      blinkingLedState = HIGH;
+    } else {
+      blinkingLedState = LOW;
+    }
+  }
 }
 
 void displaySignal(int code, int blinkingLedState) {
