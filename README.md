@@ -25,3 +25,7 @@ To have fully operational piece you will need just:
 ![Yellow/Yellow signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/both_yellow.gif) - **Code: 4**
 
 ![Yellow/Blinking Yellow signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/both_yellow_blinking.gif) - **Code: 5**
+
+![Blinking Yellow signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/yellow_blinking.gif) - **Code: 6**
+
+![Yellow/Blinking Yellow/Green bar signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/both_yellow_blinking_green_bar.gif) - **Code: 7**
