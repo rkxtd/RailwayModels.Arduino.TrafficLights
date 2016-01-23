@@ -9,7 +9,7 @@ To have fully operational piece you will need just:
 * wires
 
 ## Scheme
-* connect arduino digital pins to diodes. each diode should be attached to resistor.
+* connect arduino digital pins to diodes. each diode should be attached to resistor. Detailed instructions, which pins should be attached to which diodes could be found in USSRRailwayTrafficLight/USSRRailwayTrafficLight.ino sources.
 * updload the firmware to your arduino.
 * have fun
 
