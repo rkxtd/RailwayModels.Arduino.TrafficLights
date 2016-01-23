@@ -43,3 +43,6 @@ To have fully operational piece you will need just:
 ![Yellow Blinking/White](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/yellow_blinking_white.gif) - **Code: 13**
 
 ![Blue](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/blue.png) - **Code: 14**
+
+## Demo:
+[![Automatic mode](http://img.youtube.com/vi/5f4s45Dhabo/0.jpg)](https://www.youtube.com/watch?v=5f4s45Dhabo)
