@@ -14,13 +14,13 @@ To have fully operational piece you will need just:
 * have fun
 
 ## Signals and codes
-![Red signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/red.png =21x106) - **Code: 0**
+![Red signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/red.png) - **Code: 0**
 
 ![Yellow signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/yellow.gif) - **Code: 1**
 
 ![Green signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/green.gif) - **Code: 2**
 
-![Yellow/Green signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/yellow_green.png =21x106) - **Code: 3**
+![Yellow/Green signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/yellow_green.png) - **Code: 3**
 
 ![Yellow/Yellow signal](https://github.com/xcomanche/RailwayModels.Arduino.TrafficLights/blob/master/images/both_yellow.gif) - **Code: 4**
 
